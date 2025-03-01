@@ -1,16 +1,70 @@
-# google
+# Google Logo Flutter 🎨📱
 
-A new Flutter project.
+## Problem Statement 🚀
+I was designing the UI for my mobile application, where I needed to use the Google "G" logo. However, the default icons provided by Flutter did not include an exact match. The closest option looked more like a search icon. After exploring the [Flutter Icons API](https://api.flutter.dev/flutter/material/Icons-class.html), I confirmed that there was no official Google/Gmail logo available.
 
-## Getting Started
+### Initial Attempt ❌
+I found an alternative solution by using the `font_awesome_flutter` package:
 
-This project is a starting point for a Flutter application.
+```dart
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-A few resources to get you started if this is your first Flutter project:
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    // Google Icon
+    FaIcon(
+      FontAwesomeIcons.google,
+      size: 60,
+      color: Colors.red,
+    ),
+    SizedBox(height: 40),
+    // Gmail Icon
+    FaIcon(
+      FontAwesomeIcons.envelope,
+      size: 60,
+      color: Colors.red,
+    ),
+  ],
+)
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Output Image 📸
+![Google Icon Output](https://github.com/Hifza-Khalid/google-logo-flutter/blob/main/screenshots/Google1.JPG)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+However, I was not satisfied because:
+1. The icon lacked the original gradient shades of the Google logo.
+2. It didn't perfectly match Google's branding.
+
+### Final Solution ✅
+To get the exact Google "G" logo, I implemented it using `CustomPainter` in Flutter. This approach allowed me to accurately replicate the logo's shape, colors, and gradients.
+
+#### Implementation 🧐
+I used `CustomPainter` to draw the Google "G" logo with precise color shading and arc rendering. Check out the code in this repository for the full implementation!
+
+## Features 🎨
+- Draws the Google "G" logo accurately.
+- Uses `CustomPainter` for custom drawing.
+- Provides flexibility to adjust size and colors.
+- Does not rely on external icon libraries.
+
+## How to Run 🏃‍♂️
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Hifza-Khalid/google-logo-flutter.git
+   ```
+2. Open the project in your preferred Flutter development environment.
+3. Run the app:
+   ```sh
+   flutter run
+   ```
+
+### Final Output Image 📸
+![Final Google Logo Output](https://github.com/Hifza-Khalid/google-logo-flutter/blob/main/screenshots/Google2.JPG)
+
+## Author ✨
+- Developed & modified by **Hifza** 🌟🖌️
+
+## License 📚
+This project is open-source and available under the [MIT License](LICENSE).
+
