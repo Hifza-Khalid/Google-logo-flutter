@@ -61,9 +61,14 @@ I used `CustomPainter` to draw the Google "G" logo with precise color shading an
 
 ### Final Output Image 📸
 ![Final Google Logo Output](https://github.com/Hifza-Khalid/google-logo-flutter/blob/main/screenshots/Google2.JPG)
+<hr>
+
 
 ## Author ✨
 - Developed & modified by **Hifza** 🌟🖌️
+## Gist Google logo in Flutter 🎨
+
+[![Google Logo gist](https://img.shields.io/badge/Gist-view-blue)](https://gist.github.com/Hifza-Khalid/a029b430a4f089db173734d4fbd30a51)
 
 ## License 📚
 This project is open-source and available under the [MIT License](LICENSE).
